@@ -23,3 +23,9 @@ git checkout master (run home from the scary other forks)
 
 
 commit often
+
+git init
+git status
+git add
+git commit -m'!!'
+git push
