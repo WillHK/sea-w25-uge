@@ -1,5 +1,6 @@
 Cowboy Coder makes me want to not user git, they need to name them something less cool. Maybe Space Vigilante Coders?
 
+
 Version control is awesome though, letting you keep track of all the changes made to a project.
 
 git requires you to tell it when to save a new version of your project.
