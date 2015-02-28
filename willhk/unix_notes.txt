@@ -1,0 +1,100 @@
+Unix notes
+
+Apps need a home, unix is often that "home"
+
+unix is fast, compatible and usually free
+
+nix users are pretentious hipsters. most important takeaway
+
+Nested Subdirectories, the new hotness in 1960
+
+Kernel is the manager of the hardware resources and allows software to communicate with the hardware.
+
+Kernel access requires root password
+
+the shell is the interface that allows users to interact with the kernel
+
+the shell is a REPL
+
+~ home directory
+
+commands
+
+ls - list all files and directories in current directory -a lists all -l  lists extra details
+
+cd - change directory
+
+pwd - prints the current (working) directory
+
+less - opens up some weird not-vim that seems not very useful?
+
+cat - concatenates files together, or lists if you only give a single file argument
+
+mv - "moves" files, can rename, move to other directories etc
+
+cp - copy files
+
+mkdir - make a directory
+
+nano - like vim but less cool
+
+curl - download data from remote servers, installs stuff too
+
+whoami - a very philosophical command for a computer, also returns the logged in user
+
+sudo make me a sandwich
+
+sudo adduser - creates a new user, home folder, etc
+
+by default a user's group is the same as their username, a user can have many groups but only 1 primary group
+
+rwx - read write execute
+
+chmod - change mode(permissions) ugo user group other +- add or subract
+rwx ex. chmod u+r "filename"
+421=rwx
+chmod 777 "filename" = rwxrwxrwx
+
+top - look at all running processes, allows you to sort by a number of parameters
+
+I've been using ctrl-z to get out of console programs up until now. Oops.
+Jobs are a way to save the state of a program, go to another and return without your program losing any information. OG Multitasking.
+
+jobs - lists all our programs that are paused (jobs)
+fg - with no arguments it brings that last paused job to the foreground, with a job number as an arguement it opens that job.
+
+kill -TERM (please close nicely program)
+kill -STOP (pause, I might need you soon)
+kill -KILL (process falls dead as tiny explosive in it's head detonates)
+
+env variables are ALL CAPS
+
+export lets you pass env variables to a child process
+
+find lets us find files based on file name with -name
+
+oooh grep lets us use regex, I like regex.
+grep lets you search the content of files for words or expressions
+
+| lets you direct output from one program to the input of another, awesome.
+<FILE lets you redirect a file to an input
+
+>FILE lets you redirect output ot a file OVERWRITES FILE
+
+>>FILE appends output to a file
+
+/dev/null is like a blackhole of info, anything written to it is discarded
+
+Installing software from source
+
+1. Download Source
+2. Untar file
+3. ./configure
+4. make
+5. sudo make install
+
+sudo apt-get update upgrade install remove
+
+apt-cache search is neat
+
+brew is the osx equiv, I've used it, it works.
